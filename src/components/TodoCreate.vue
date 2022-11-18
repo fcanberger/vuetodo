@@ -19,7 +19,7 @@ export default class TodoCreate extends Vue {
   description = "";
 
   addTodo() {
-    this.$emit("TodoCreate", new Todo(this.description));
+    this.$emit("createTodo", new Todo(this.description));
     this.description = "";
   }
 }
